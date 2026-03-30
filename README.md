@@ -48,4 +48,8 @@ MongoDB v6+
 Attached in email
 Note: Use the "dms-frontend" folder for frontend setup.
 
+## login details
+user name - admin
+password - 123
+
 # dms-project 04b08004ec2d7036430847a1c299511906f09fe1
