@@ -1,0 +1,62 @@
+<div class="main">
+
+  <!-- 🔷 SIDEBAR -->
+  <div class="sidebar">
+    <h2>DMS</h2>
+    <ul>
+      <li>Dashboard</li>
+      <li>Upload</li>
+      <li>Documents</li>
+      <li>Settings</li>
+    </ul>
+  </div>
+
+  <!-- 🔷 CONTENT -->
+  <div class="content">
+
+    <!-- 🔷 NAVBAR -->
+    <div class="navbar">
+      <h2>Document Management System</h2>
+      <button (click)="logout()">Logout</button>
+    </div>
+
+    <!-- 🔷 UPLOAD SECTION -->
+    <div class="card">
+      <h3>Upload Document</h3>
+      <input type="file" (change)="onFileSelected($event)">
+      <input type="text" [(ngModel)]="tags" placeholder="Enter tags">
+      <button (click)="upload()">Upload</button>
+    </div>
+
+    <!-- 🔷 SEARCH -->
+    <div class="card">
+      <input type="text" [(ngModel)]="searchText" placeholder="Search by tag">
+      <button (click)="search()">Search</button>
+    </div>
+
+    <!-- 🔷 DOCUMENTS -->
+    <div class="doc-grid">
+      <div class="doc-card" *ngFor="let doc of documents">
+
+        <h4>{{doc.originalName}}</h4>
+        <p>Tags: {{doc.tags}}</p>
+        <p>Version: {{doc.version}}</p>
+
+        <div class="actions">
+          <a href="http://localhost:5000/uploads/{{doc.filename}}" target="_blank">⬇️</a>
+
+          <button *ngIf="doc.permission === 'edit'" (click)="deleteDoc(doc._id)">🗑️</button>
+
+          <button (click)="shareDoc(doc.filename)">📤</button>
+
+          <select [(ngModel)]="doc.permission">
+            <option value="view">View</option>
+            <option value="edit">Edit</option>
+          </select>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>

@@ -1,0 +1,274 @@
+/* You can add global styles to this file, and also import other style files */
+/* RESET */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* MAIN CONTAINER */
+.login-container {
+  display: flex;
+  height: 100vh;
+}
+
+/* LEFT SIDE */
+.left {
+  flex: 1;
+  background: linear-gradient(135deg, #00c9a7, #007f73);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 60px;
+}
+
+.left h1 {
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+
+.left p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.left button {
+  width: 150px;
+  padding: 10px;
+  border: 2px solid white;
+  background: transparent;
+  color: white;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+/* RIGHT SIDE */
+.right {
+  flex: 1;
+  background: #e8f8f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* LOGIN BOX */
+.login-box {
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  width: 320px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+/* INPUTS */
+.login-box input {
+  width: 100%;
+  padding: 10px;
+  margin: 12px 0;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  outline: none;
+}
+
+/* BUTTON */
+.login-box button {
+  width: 100%;
+  padding: 10px;
+  background: #00c9a7;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-box button:hover {
+  background: #009e87;
+}
+/* DASHBOARD PAGE */
+.dashboard-container {
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+}
+
+/* HEADINGS */
+h2 {
+  margin-bottom: 15px;
+}
+
+/* UPLOAD SECTION */
+input[type="text"],
+input[type="file"] {
+  padding: 8px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* BUTTONS */
+button {
+  padding: 7px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+/* Upload button */
+button:nth-of-type(1) {
+  background-color: #00c9a7;
+  color: white;
+}
+
+/* Search button */
+button:nth-of-type(2) {
+  background-color: #007f73;
+  color: white;
+}
+
+/* DOCUMENT CARDS */
+.doc-card {
+  background: #ffffff;
+  padding: 15px;
+  margin-top: 15px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+/* TEXT */
+.doc-card p {
+  margin: 5px 0;
+}
+
+/* DOWNLOAD LINK */
+.doc-card a {
+  margin-right: 10px;
+  color: #007f73;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* DELETE BUTTON */
+.doc-card button {
+  margin-top: 5px;
+}
+
+/* DELETE RED */
+.doc-card button:nth-child(2) {
+  background-color: #ff4d4d;
+  color: white;
+}
+
+/* SHARE GREEN */
+.doc-card button:nth-child(3) {
+  background-color: #28a745;
+  color: white;
+}
+
+/* DROPDOWN */
+select {
+  margin-left: 10px;
+  padding: 5px;
+  border-radius: 5px;
+}
+/* ===== DASHBOARD UI START ===== */
+
+/* LAYOUT */
+.main {
+  display: flex;
+  height: 100vh;
+  font-family: Arial;
+}
+
+/* SIDEBAR */
+.sidebar {
+  width: 200px;
+  background: #007f73;
+  color: white;
+  padding: 20px;
+}
+
+.sidebar h2 {
+  margin-bottom: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin: 15px 0;
+  cursor: pointer;
+}
+
+/* CONTENT */
+.content {
+  flex: 1;
+  padding: 20px;
+  background: #f5f7fa;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+/* CARDS */
+.card {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* GRID */
+.doc-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 15px;
+}
+
+/* DOC CARD */
+.doc-card {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* ACTIONS */
+.actions {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* BUTTONS */
+button {
+  border: none;
+  padding: 5px 8px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* INPUT */
+input {
+  padding: 8px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* DROPDOWN */
+select {
+  padding: 5px;
+}
+
+/* ===== DASHBOARD UI END ===== */
